@@ -6,19 +6,6 @@ const hoverLight =
 const hoverOverlay =
   "transition-all duration-300 ease-out hover:-translate-y-1 hover:border-white/35 hover:bg-white/15 hover:shadow-[0_14px_40px_-16px_rgba(0,0,0,0.45)]";
 
-const hoverAccordion =
-  "transition-all duration-300 ease-out hover:border-accent/30 hover:shadow-[0_10px_32px_-14px_rgba(26,77,46,0.12)]";
-
-const hoverAccordionOverlay =
-  "transition-all duration-300 ease-out hover:border-white/30 hover:bg-white/14 hover:shadow-[0_10px_32px_-14px_rgba(0,0,0,0.4)]";
-
-function cardHover(theme: SectionTheme) {
-  return theme === "overlay" ? hoverOverlay : hoverLight;
-}
-
-function accordionHover(theme: SectionTheme) {
-  return theme === "overlay" ? hoverAccordionOverlay : hoverAccordion;
-}
 
 export const tc = {
   section: (theme: SectionTheme) =>

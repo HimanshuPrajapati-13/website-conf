@@ -34,7 +34,7 @@
   }
 
   .section-pad {
-    @apply px-5 py-20 md:px-8 md:py-28 lg:px-12;
+    @apply px-4 py-14 sm:px-6 sm:py-20 md:px-8 md:py-24 lg:px-12 lg:py-28;
   }
 
   .container-wide {
@@ -43,5 +43,10 @@
 
   .prose-width {
     @apply max-w-[65ch];
+  }
+
+  /* Smooth momentum touch scrolling on iOS / Android */
+  .touch-scroll {
+    -webkit-overflow-scrolling: touch;
   }
 }

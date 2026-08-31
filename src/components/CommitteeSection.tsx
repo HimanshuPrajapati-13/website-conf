@@ -93,7 +93,7 @@ export function CommitteeSection({ theme = "light" }: CommitteeSectionProps) {
           description="Leadership and committee members guiding SES-IKS 2026."
         />
 
-        <div className="space-y-14">
+        <div className="space-y-10 sm:space-y-14">
           <div>
             <h3 className={tc.h2Section(theme)}>Patrons</h3>
             <PersonGrid people={patrons} theme={theme} />
@@ -116,9 +116,9 @@ export function CommitteeSection({ theme = "light" }: CommitteeSectionProps) {
 
           <div>
             <h3 className={tc.h2Section(theme)}>Advisory Committee</h3>
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {advisoryCommittee.map((member) => (
-                <p key={member} className={`px-4 py-3 ${tc.panelMuted(theme)} ${tc.body(theme)}`}>
+                <p key={member} className={`px-4 py-3 rounded-sm ${tc.panelMuted(theme)} ${tc.body(theme)} text-sm sm:text-base`}>
                   {member}
                 </p>
               ))}

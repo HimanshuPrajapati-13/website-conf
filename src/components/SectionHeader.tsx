@@ -17,9 +17,9 @@ export function SectionHeader({
   children,
 }: SectionHeaderProps) {
   return (
-    <div id={id} className="mb-12 scroll-mt-24 md:mb-16">
+    <div id={id} className="mb-8 scroll-mt-20 sm:mb-12 md:mb-16">
       <h2
-        className={`font-serif text-3xl leading-tight tracking-tight md:text-4xl lg:text-5xl ${
+        className={`font-serif text-2xl leading-tight tracking-tight sm:text-3xl md:text-4xl lg:text-5xl ${
           theme === "overlay" ? "text-white" : "text-ink"
         }`}
       >
@@ -27,7 +27,7 @@ export function SectionHeader({
       </h2>
       {description && (
         <p
-          className={`prose-width mt-5 text-xl leading-relaxed ${
+          className={`prose-width mt-3 text-base leading-relaxed sm:mt-4 sm:text-lg md:mt-5 md:text-xl ${
             theme === "overlay" ? "text-white/80" : "text-ink-muted"
           }`}
         >

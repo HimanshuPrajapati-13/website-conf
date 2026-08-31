@@ -18,7 +18,7 @@ export function ContactSection({ theme = "light" }: ContactSectionProps) {
           description="Reach the organizing committee for abstract submission, registration, and general conference inquiries."
         />
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           <div className={tc.panelMuted(theme)}>
             <EnvelopeSimple size={28} weight="duotone" className={tc.icon(theme)} />
             <h3 className={`mt-4 ${tc.h4(theme)}`}>Email</h3>

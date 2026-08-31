@@ -31,12 +31,12 @@ export function SplashScreen() {
         isFading ? "opacity-0" : "opacity-100"
       }`}
     >
-      <div className="relative flex flex-col items-center justify-center gap-12">
+      <div className="relative flex flex-col items-center justify-center gap-8 sm:gap-12 px-4 text-center max-w-full">
         <h1
-          className="text-white text-3xl sm:text-5xl md:text-7xl lg:text-[8rem] font-black uppercase tracking-[0.1em] sm:tracking-[0.2em]"
+          className="text-white text-2xl xs:text-3xl sm:text-5xl md:text-7xl lg:text-[7.5rem] font-black uppercase tracking-[0.08em] sm:tracking-[0.16em] max-w-[95vw] break-words"
           style={{
             fontFamily: '"Arial Black", Impact, sans-serif',
-            transform: "scaleX(1.2)",
+            transform: "scaleX(1.1)",
             textShadow:
               "0 0 10px rgba(255,255,255,0.6), 0 0 20px rgba(255,255,255,0.3)",
           }}
@@ -44,7 +44,7 @@ export function SplashScreen() {
           SES-IKS&apos;26
         </h1>
         <div className="text-white/80">
-          <ConcentricRing className="w-12 h-12" />
+          <ConcentricRing className="w-10 h-10 sm:w-12 sm:h-12" />
         </div>
       </div>
     </div>

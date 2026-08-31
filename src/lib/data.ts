@@ -418,10 +418,40 @@ export const advisoryCommittee = [
   "Prof. Manoj K. Srivastava - Banaras Hindu University, India",
 ];
 
-export const nearbyPlaces = [
-  "Ajmer Sharif Dargah",
-  "Pushkar Lake",
-  "Aavalli Hills",
+export type NearbyPlace = {
+  name: string;
+  image: string;
+  images?: string[];
+  alt: string;
+  distance?: string;
+  description?: string;
+};
+
+export const nearbyPlaces: NearbyPlace[] = [
+  {
+    name: "Ajmer Sharif Dargah",
+    image: "/images/ajmer-sharif.jpg",
+    images: ["/images/ajmer-sharif.jpg"],
+    alt: "Ajmer Sharif Dargah illuminated at night",
+    distance: "Historical Shrine",
+    description: "Revered Sufi shrine of Khwaja Moinuddin Chishti, known for its spiritual heritage and architectural grace.",
+  },
+  {
+    name: "Pushkar Lake & Brahma Temple",
+    image: "/images/pushkar-ghats.jpg",
+    images: ["/images/pushkar-ghats.jpg", "/images/pushkar-sunset.jpg"],
+    alt: "Pushkar Holy Lake, Ghats, and Sunset in Rajasthan",
+    distance: "Sacred Pilgrimage",
+    description: "Historic sacred lake with 52 ghats, serene sunsets, and the famous temple dedicated to Lord Brahma.",
+  },
+  {
+    name: "Aravalli Hills & Taragarh Fort",
+    image: "/images/aravali-hills.jpg",
+    images: ["/images/aravali-hills.jpg"],
+    alt: "Scenic Aravalli mountain ranges near Ajmer",
+    distance: "Ancient Ecosystem",
+    description: "One of the oldest geological mountain systems with scenic regional biodiversity.",
+  },
 ];
 
 export const abstractGuidelines = {

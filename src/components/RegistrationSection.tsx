@@ -26,8 +26,13 @@ export function RegistrationSection({ theme = "light" }: RegistrationSectionProp
           </ul>
         </div>
 
-        <div className={tc.tableWrap(theme)}>
-          <table className="w-full min-w-[720px] text-left text-base">
+        <div className="mb-2 flex items-center justify-between sm:hidden">
+          <span className="text-xs text-white/60">Fee Schedule</span>
+          <span className="text-xs text-[#8fd4a8]">Scroll horizontally →</span>
+        </div>
+
+        <div className={`${tc.tableWrap(theme)} touch-scroll`}>
+          <table className="w-full min-w-[620px] sm:min-w-[720px] text-left text-sm sm:text-base">
             <thead className={tc.tableHead(theme)}>
               <tr>
                 <th className={tc.tableTh(theme)}>Category</th>
@@ -42,14 +47,14 @@ export function RegistrationSection({ theme = "light" }: RegistrationSectionProp
 
                 return (
                   <tr key={row.category} className={`border-t ${tc.border(theme)}`}>
-                    <td className={`px-4 py-4 md:px-6 ${tc.body(theme)}`}>{row.category}</td>
-                    <td className={`px-4 py-4 font-semibold md:px-6 ${theme === "overlay" ? "text-white" : "text-ink"}`}>
+                    <td className={`px-3.5 py-3 sm:px-6 sm:py-4 ${tc.body(theme)} font-medium sm:font-normal`}>{row.category}</td>
+                    <td className={`px-3.5 py-3 font-semibold sm:px-6 sm:py-4 ${theme === "overlay" ? "text-white" : "text-ink"}`}>
                       {symbol} {row.fee}
                     </td>
-                    <td className={`px-4 py-4 md:px-6 ${tc.body(theme)}`}>
+                    <td className={`px-3.5 py-3 sm:px-6 sm:py-4 ${tc.body(theme)}`}>
                       {symbol} {row.afterDue}
                     </td>
-                    <td className={`px-4 py-4 md:px-6 ${tc.body(theme)}`}>
+                    <td className={`px-3.5 py-3 sm:px-6 sm:py-4 ${tc.body(theme)}`}>
                       {symbol} {row.onSpot}
                     </td>
                   </tr>
