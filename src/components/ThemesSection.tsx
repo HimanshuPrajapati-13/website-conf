@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { CaretDown } from "@phosphor-icons/react";
 import { SectionHeader } from "@/components/SectionHeader";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import { themes } from "@/lib/data";
 import type { SectionTheme } from "@/lib/section-theme";
 import { tc } from "@/lib/section-theme";
@@ -17,18 +18,21 @@ export function ThemesSection({ theme = "light" }: ThemesSectionProps) {
   return (
     <section id="themes" className={tc.sectionMuted(theme)}>
       <div className="container-wide">
-        <SectionHeader
-          theme={theme}
-          title="Conference Themes"
-          description="Six thematic areas covering climate, water, ecosystems, agriculture, resilient transitions, and a special session on Himalayan ecosystems."
-        />
+        <ScrollReveal delay={100}>
+          <SectionHeader
+            theme={theme}
+            title="Conference Themes"
+            description="Six thematic areas covering climate, water, ecosystems, agriculture, resilient transitions, and a special session on Himalayan ecosystems."
+          />
+        </ScrollReveal>
 
         <div className="space-y-3">
           {themes.map((item, index) => {
             const isOpen = openIndex === index;
 
             return (
-              <div key={item.number} className={tc.accordion(theme)}>
+              <ScrollReveal key={item.number} delay={100 + index * 50}>
+                <div className={tc.accordion(theme)}>
                 <button
                   type="button"
                   className="flex w-full items-start justify-between gap-4 px-5 py-5 text-left md:px-6 md:py-6"
@@ -75,7 +79,8 @@ export function ThemesSection({ theme = "light" }: ThemesSectionProps) {
                     </div>
                   </div>
                 )}
-              </div>
+                </div>
+              </ScrollReveal>
             );
           })}
         </div>

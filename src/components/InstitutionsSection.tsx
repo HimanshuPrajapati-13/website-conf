@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ArrowsClockwise, Image as ImageIcon } from "@phosphor-icons/react";
 import { SectionHeader } from "@/components/SectionHeader";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import { nearbyPlaces } from "@/lib/data";
 import type { SectionTheme } from "@/lib/section-theme";
 import { tc } from "@/lib/section-theme";
@@ -111,40 +112,47 @@ export function InstitutionsSection({ theme = "light" }: InstitutionsSectionProp
   return (
     <section className={tc.sectionMuted(theme)}>
       <div className="container-wide">
-        <SectionHeader
-          theme={theme}
-          title="Host Institutions"
-          description="SES-IKS 2027 is jointly organized by Central University of Rajasthan and Tribhuvan University."
-        />
+        <ScrollReveal delay={100}>
+          <SectionHeader
+            theme={theme}
+            title="Host Institutions"
+            description="SES-IKS 2027 is jointly organized by Central University of Rajasthan and Tribhuvan University."
+          />
+        </ScrollReveal>
 
         <div className="grid gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-12">
-          <InstitutionCard
-            title="Central University of Rajasthan"
-            paragraphs={[
-              "Established by an Act of Parliament in March 2009, Central University of Rajasthan is located in Ajmer District, Rajasthan. The university operates through its own 518-acre campus with modern amenities.",
-              "Fully funded by the Ministry of Education through the University Grants Commission, the university has been accredited with an A++ grade by NAAC in 2023 and holds Category I University status.",
-              "The School of Earth Sciences provides interdisciplinary knowledge in environmental and atmospheric sciences, training scholars through research, education, and outreach programs in collaboration with national and international organizations.",
-            ]}
-            imageSrc="/images/curaj-campus.jpeg"
-            imageAlt="Central University of Rajasthan campus"
-            theme={theme}
-          />
+          <ScrollReveal delay={150}>
+            <InstitutionCard
+              title="Central University of Rajasthan"
+              paragraphs={[
+                "Established by an Act of Parliament in March 2009, Central University of Rajasthan is located in Ajmer District, Rajasthan. The university operates through its own 518-acre campus with modern amenities.",
+                "Fully funded by the Ministry of Education through the University Grants Commission, the university has been accredited with an A++ grade by NAAC in 2023 and holds Category I University status.",
+                "The School of Earth Sciences provides interdisciplinary knowledge in environmental and atmospheric sciences, training scholars through research, education, and outreach programs in collaboration with national and international organizations.",
+              ]}
+              imageSrc="/images/curaj-campus.jpeg"
+              imageAlt="Central University of Rajasthan campus"
+              theme={theme}
+            />
+          </ScrollReveal>
 
-          <InstitutionCard
-            title="Tribhuvan University"
-            paragraphs={[
-              "Tribhuvan University contributes to SES-IKS 2027 through its School of Earth Sciences and international relations programs, supporting interdisciplinary research in environmental and atmospheric sciences.",
-              "The university emphasizes training in earth sciences to serve local and global communities, with departments offering undergraduate, postgraduate, and doctoral programs across environmental and atmospheric science.",
-              "Collaboration between CURaj and Tribhuvan University reflects the conference commitment to cross-border knowledge exchange on sustainable environmental solutions.",
-            ]}
-            imageSrc="/images/tu-campus.jpeg"
-            imageAlt="Tribhuvan University campus"
-            theme={theme}
-          />
+          <ScrollReveal delay={250}>
+            <InstitutionCard
+              title="Tribhuvan University"
+              paragraphs={[
+                "Tribhuvan University contributes to SES-IKS 2027 through its School of Earth Sciences and international relations programs, supporting interdisciplinary research in environmental and atmospheric sciences.",
+                "The university emphasizes training in earth sciences to serve local and global communities, with departments offering undergraduate, postgraduate, and doctoral programs across environmental and atmospheric science.",
+                "Collaboration between CURaj and Tribhuvan University reflects the conference commitment to cross-border knowledge exchange on sustainable environmental solutions.",
+              ]}
+              imageSrc="/images/tu-campus.jpeg"
+              imageAlt="Tribhuvan University campus"
+              theme={theme}
+            />
+          </ScrollReveal>
         </div>
 
         {/* Nearby Places with Interactive Hover Image Preview & Multi-photo Carousel */}
-        <div className="mt-12 sm:mt-16 grid gap-6 sm:gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch">
+        <ScrollReveal delay={200}>
+          <div className="mt-12 sm:mt-16 grid gap-6 sm:gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch">
           {/* Dynamic Image Display with smooth transition */}
           <div className={`relative min-h-[20rem] sm:min-h-[24rem] lg:min-h-full overflow-hidden rounded-3xl border ${tc.border(theme)} shadow-xl bg-black/40`}>
             {activeImages.map((imgSrc, imgIdx) => (
@@ -274,6 +282,7 @@ export function InstitutionsSection({ theme = "light" }: InstitutionsSectionProp
             </p>
           </div>
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );

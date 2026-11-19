@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Person } from "@/lib/data";
 import { SectionHeader } from "@/components/SectionHeader";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import {
   advisoryCommittee,
   conveners,
@@ -87,43 +88,55 @@ export function CommitteeSection({ theme = "light" }: CommitteeSectionProps) {
   return (
     <section id="committee" className={tc.section(theme)}>
       <div className="container-wide">
-        <SectionHeader
-          theme={theme}
-          title="Organizing Committee"
-          description="Leadership and committee members guiding SES-IKS 2027."
-        />
+        <ScrollReveal delay={100}>
+          <SectionHeader
+            theme={theme}
+            title="Organizing Committee"
+            description="Leadership and committee members guiding SES-IKS 2027."
+          />
+        </ScrollReveal>
 
         <div className="space-y-10 sm:space-y-14">
-          <div>
-            <h3 className={tc.h2Section(theme)}>Patrons</h3>
-            <PersonGrid people={patrons} theme={theme} />
-          </div>
-
-          <div>
-            <h3 className={tc.h2Section(theme)}>Conveners</h3>
-            <PersonGrid people={conveners} theme={theme} />
-          </div>
-
-          <div>
-            <h3 className={tc.h2Section(theme)}>Organizing Secretaries</h3>
-            <PersonGrid people={organizingSecretaries} theme={theme} />
-          </div>
-
-          <div>
-            <h3 className={tc.h2Section(theme)}>Organizing Committee</h3>
-            <PersonGrid people={organizingCommittee} theme={theme} />
-          </div>
-
-          <div>
-            <h3 className={tc.h2Section(theme)}>Advisory Committee</h3>
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {advisoryCommittee.map((member) => (
-                <p key={member} className={`px-5 py-3 rounded-2xl ${tc.panelMuted(theme)} ${tc.body(theme)} text-sm sm:text-base`}>
-                  {member}
-                </p>
-              ))}
+          <ScrollReveal delay={150}>
+            <div>
+              <h3 className={tc.h2Section(theme)}>Patrons</h3>
+              <PersonGrid people={patrons} theme={theme} />
             </div>
-          </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={150}>
+            <div>
+              <h3 className={tc.h2Section(theme)}>Conveners</h3>
+              <PersonGrid people={conveners} theme={theme} />
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={150}>
+            <div>
+              <h3 className={tc.h2Section(theme)}>Organizing Secretaries</h3>
+              <PersonGrid people={organizingSecretaries} theme={theme} />
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={150}>
+            <div>
+              <h3 className={tc.h2Section(theme)}>Organizing Committee</h3>
+              <PersonGrid people={organizingCommittee} theme={theme} />
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={150}>
+            <div>
+              <h3 className={tc.h2Section(theme)}>Advisory Committee</h3>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {advisoryCommittee.map((member) => (
+                  <p key={member} className={`px-5 py-3 rounded-2xl ${tc.panelMuted(theme)} ${tc.body(theme)} text-sm sm:text-base`}>
+                    {member}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
