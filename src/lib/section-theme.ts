@@ -18,19 +18,19 @@ export const tc = {
       : "section-pad border-b border-border bg-paper-muted",
   panel: (theme: SectionTheme) =>
     theme === "overlay"
-      ? `rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-md md:p-8 ${hoverOverlay}`
+      ? `rounded-3xl border border-white/25 bg-black/45 p-6 backdrop-blur-md md:p-8 ${hoverOverlay}`
       : `rounded-3xl border border-border bg-paper p-6 md:p-8 ${hoverLight}`,
   panelMuted: (theme: SectionTheme) =>
     theme === "overlay"
-      ? `rounded-3xl border border-white/15 bg-black/20 p-6 backdrop-blur-md md:p-8 ${hoverOverlay}`
+      ? `rounded-3xl border border-white/20 bg-black/50 p-6 backdrop-blur-md md:p-8 ${hoverOverlay}`
       : `rounded-3xl border border-border bg-paper-muted p-6 md:p-8 ${hoverLight}`,
   card: (theme: SectionTheme) =>
     theme === "overlay"
-      ? `rounded-3xl border border-white/20 bg-white/10 p-5 backdrop-blur-md md:p-6 ${hoverOverlay}`
+      ? `rounded-3xl border border-white/25 bg-black/45 p-5 backdrop-blur-md md:p-6 ${hoverOverlay}`
       : `rounded-3xl border border-border bg-paper p-5 md:p-6 ${hoverLight}`,
   cardFlat: (theme: SectionTheme) =>
     theme === "overlay"
-      ? `rounded-2xl border border-white/20 bg-white/10 px-6 py-4 backdrop-blur-md ${hoverOverlay}`
+      ? `rounded-2xl border border-white/25 bg-black/45 px-6 py-4 backdrop-blur-md ${hoverOverlay}`
       : `rounded-2xl border border-border bg-paper px-6 py-4 ${hoverLight}`,
   h2Section: (theme: SectionTheme) =>
     theme === "overlay"
@@ -49,32 +49,32 @@ export const tc = {
       ? "font-serif text-xl text-white"
       : "font-serif text-xl text-ink",
   body: (theme: SectionTheme) =>
-    theme === "overlay" ? "text-base text-white/80" : "text-base text-ink-muted",
+    theme === "overlay" ? "text-base text-white font-normal" : "text-base text-ink-muted",
   bodyLg: (theme: SectionTheme) =>
-    theme === "overlay" ? "text-lg text-white/85" : "text-lg text-ink-muted",
+    theme === "overlay" ? "text-lg text-white font-normal" : "text-lg text-ink-muted",
   title: (theme: SectionTheme) =>
-    theme === "overlay" ? "text-base font-medium text-white" : "text-base font-medium text-ink",
+    theme === "overlay" ? "text-base font-semibold text-white" : "text-base font-medium text-ink",
   accent: (theme: SectionTheme) =>
     theme === "overlay"
       ? "text-lg font-semibold text-[#8fd4a8]"
       : "text-lg font-semibold text-accent",
   subtle: (theme: SectionTheme) =>
-    theme === "overlay" ? "text-sm text-white/60" : "text-sm text-ink-subtle",
+    theme === "overlay" ? "text-sm text-white/90" : "text-sm text-ink-subtle",
   label: (theme: SectionTheme) =>
     theme === "overlay"
-      ? "text-sm font-semibold uppercase tracking-wide text-white/55"
+      ? "text-sm font-semibold uppercase tracking-wide text-white/90"
       : "text-sm font-semibold uppercase tracking-wide text-ink-subtle",
   accentLabel: (theme: SectionTheme) =>
     theme === "overlay"
       ? "text-sm font-semibold text-[#8fd4a8]"
       : "text-sm font-semibold text-accent",
   border: (theme: SectionTheme) =>
-    theme === "overlay" ? "border-white/15" : "border-border",
+    theme === "overlay" ? "border-white/20" : "border-border",
   link: (theme: SectionTheme) =>
     theme === "overlay" ? "text-[#8fd4a8] hover:underline" : "text-accent hover:underline",
   linkMuted: (theme: SectionTheme) =>
     theme === "overlay"
-      ? "text-white/75 hover:text-[#8fd4a8]"
+      ? "text-white/90 hover:text-[#8fd4a8]"
       : "text-ink-muted hover:text-accent",
   icon: (theme: SectionTheme) =>
     theme === "overlay" ? "text-[#8fd4a8]" : "text-accent",
@@ -92,14 +92,14 @@ export const tc = {
       : "px-4 py-4 font-semibold text-ink md:px-6",
   accordion: (theme: SectionTheme) =>
     theme === "overlay"
-      ? "overflow-hidden rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md"
+      ? "overflow-hidden rounded-2xl border border-white/25 bg-black/40 backdrop-blur-md"
       : "overflow-hidden rounded-2xl border border-border bg-paper",
   accordionTitle: (theme: SectionTheme) =>
     theme === "overlay"
-      ? "mt-1 font-serif text-xl text-white md:text-2xl"
+      ? "mt-1 font-serif text-xl font-medium text-white md:text-2xl"
       : "mt-1 font-serif text-xl text-ink md:text-2xl",
   accordionIcon: (theme: SectionTheme) =>
-    theme === "overlay" ? "text-white/70" : "text-ink-muted",
+    theme === "overlay" ? "text-white" : "text-ink-muted",
   footer: (theme: SectionTheme) =>
     theme === "overlay"
       ? "relative z-10 border-t border-white/15 bg-black/30 backdrop-blur-md"

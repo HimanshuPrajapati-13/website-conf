@@ -92,7 +92,7 @@ export function CommitteeSection({ theme = "light" }: CommitteeSectionProps) {
           <SectionHeader
             theme={theme}
             title="Organizing Committee"
-            description="Leadership and committee members guiding SES-IKS 2027."
+            description="Leadership and committee members guiding ICSES 2027."
           />
         </ScrollReveal>
 

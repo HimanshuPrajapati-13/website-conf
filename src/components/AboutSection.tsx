@@ -44,7 +44,7 @@ export function AboutSection() {
               </h2>
 
               <p className="font-serif text-xl sm:text-2xl italic text-[#3A5D48] leading-relaxed border-l-2 border-[#3A5D48] pl-4">
-                SES-IKS 2027 brings together global experts, researchers, policymakers, practitioners, and students to co-create innovative, inclusive and scalable solutions for a resilient planet.
+                ICSES 2027 brings together global experts, researchers, policymakers, practitioners, and students to co-create innovative, inclusive and scalable solutions for a resilient planet.
               </p>
 
               <div className="space-y-4 font-sans text-base sm:text-lg leading-relaxed text-[#4A5550]">
@@ -108,7 +108,7 @@ export function AboutSection() {
 
               <div className="mt-8 pt-6 border-t border-[#E5E0D5] flex items-center justify-between">
                 <p className="font-mono text-xs text-[#6B7280] uppercase tracking-wider">
-                  SES-IKS 2027 • Thematic Tracks
+                  ICSES 2027 • Thematic Tracks
                 </p>
                 <a
                   href="#themes"

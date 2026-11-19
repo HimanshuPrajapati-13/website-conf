@@ -73,7 +73,7 @@ export function AbstractsSection({ theme = "light" }: AbstractsSectionProps) {
               </p>
 
               <a
-                href={`mailto:${site.email}?subject=SES-IKS%202027%20Abstract%20Submission`}
+                href={`mailto:${site.email}?subject=ICSES%202027%20Abstract%20Submission`}
                 className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-4 text-lg font-semibold text-white shadow-md transition-all hover:bg-accent-hover hover:shadow-lg active:scale-[0.98]"
               >
                 <EnvelopeSimple size={22} weight="bold" />

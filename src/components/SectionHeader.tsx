@@ -28,7 +28,7 @@ export function SectionHeader({
       {description && (
         <p
           className={`prose-width mt-3 text-base leading-relaxed sm:mt-4 sm:text-lg md:mt-5 md:text-xl ${
-            theme === "overlay" ? "text-white/80" : "text-ink-muted"
+            theme === "overlay" ? "text-white/95" : "text-ink-muted"
           }`}
         >
           {description}

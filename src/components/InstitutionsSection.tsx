@@ -116,7 +116,7 @@ export function InstitutionsSection({ theme = "light" }: InstitutionsSectionProp
           <SectionHeader
             theme={theme}
             title="Host Institutions"
-            description="SES-IKS 2027 is jointly organized by Central University of Rajasthan and Tribhuvan University."
+            description="ICSES 2027 is jointly organized by Central University of Rajasthan and Tribhuvan University."
           />
         </ScrollReveal>
 
@@ -139,7 +139,7 @@ export function InstitutionsSection({ theme = "light" }: InstitutionsSectionProp
             <InstitutionCard
               title="Tribhuvan University"
               paragraphs={[
-                "Tribhuvan University contributes to SES-IKS 2027 through its School of Earth Sciences and international relations programs, supporting interdisciplinary research in environmental and atmospheric sciences.",
+                "Tribhuvan University contributes to ICSES 2027 through its School of Earth Sciences and international relations programs, supporting interdisciplinary research in environmental and atmospheric sciences.",
                 "The university emphasizes training in earth sciences to serve local and global communities, with departments offering undergraduate, postgraduate, and doctoral programs across environmental and atmospheric science.",
                 "Collaboration between CURaj and Tribhuvan University reflects the conference commitment to cross-border knowledge exchange on sustainable environmental solutions.",
               ]}

@@ -89,7 +89,7 @@ export function Header() {
             </div>
             <div className="flex flex-col leading-none">
               <span className="font-sans text-sm font-black tracking-wider text-white uppercase sm:text-base">
-                SES-IKS
+                ICSES
               </span>
               <span
                 className={`text-[10px] font-bold tracking-[0.2em] uppercase sm:text-xs transition-colors duration-500 ${

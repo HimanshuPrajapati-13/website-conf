@@ -17,7 +17,7 @@ export type Theme = {
 };
 
 export const site = {
-  name: "SES-IKS 2027",
+  name: "ICSES 2027",
   fullTitle:
     "International Conference on Sustainable Environmental Solutions: Integrating Modern Science and Indigenous Knowledge Systems",
   tagline: "Bridging knowledge, nurturing nature, securing our future",

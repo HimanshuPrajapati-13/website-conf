@@ -39,7 +39,7 @@ export function Footer({ theme = "light" }: FooterProps) {
             organizations, development agencies, and industry stakeholders.
           </p>
           <p className="mt-3">
-            Copyright {new Date().getFullYear()} SES-IKS 2027. All rights reserved.
+            Copyright {new Date().getFullYear()} ICSES 2027. All rights reserved.
           </p>
         </div>
       </div>

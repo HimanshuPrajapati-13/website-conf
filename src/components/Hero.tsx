@@ -15,7 +15,7 @@ export function Hero() {
             {/* Header pill / tracker */}
             <div className="mb-4">
               <span className="font-mono text-xs sm:text-sm font-semibold tracking-widest uppercase text-[#3A5D48]">
-                SES-IKS 2027 • 18–19 JANUARY 2027
+                ICSES 2027 • 18–19 JANUARY 2027
               </span>
             </div>
 
@@ -39,7 +39,7 @@ export function Hero() {
 
             {/* Conference Description Story */}
             <p className="mt-6 font-sans text-base sm:text-lg leading-relaxed text-[#4A5550] max-w-xl">
-              <strong className="text-[#1A1A18] font-semibold">SES-IKS 2027</strong> brings together global researchers, Indigenous knowledge holders, policymakers, and innovators to co-create actionable solutions for environmental resilience. Exploring the synergy between modern atmospheric & earth sciences and time-tested ecological stewardship.
+              <strong className="text-[#1A1A18] font-semibold">ICSES 2027</strong> brings together global researchers, Indigenous knowledge holders, policymakers, and innovators to co-create actionable solutions for environmental resilience. Exploring the synergy between modern atmospheric & earth sciences and time-tested ecological stewardship.
             </p>
 
             {/* Theme Focus Pill Badges */}
@@ -103,7 +103,7 @@ export function Hero() {
           {/* Bottom vignette placard */}
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-6 sm:p-8 text-white flex items-end justify-between">
             <div>
-              <p className="font-mono text-xs uppercase tracking-widest text-[#8fd4a8]">SES-IKS 2027</p>
+              <p className="font-mono text-xs uppercase tracking-widest text-[#8fd4a8]">ICSES 2027</p>
               <p className="font-serif text-base sm:text-lg font-bold leading-tight mt-1 text-[#EDE5D8]">
                 Bridging knowledge, nurturing nature, securing our future
               </p>

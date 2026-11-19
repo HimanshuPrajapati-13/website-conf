@@ -18,18 +18,18 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "SES-IKS 2027 | Sustainable Environmental Solutions Conference",
+  title: "ICSES 2027 | Sustainable Environmental Solutions Conference",
   description:
     "International Conference on Sustainable Environmental Solutions: Integrating Modern Science and Indigenous Knowledge Systems. 18-19 January 2027, Central University of Rajasthan.",
   keywords: [
-    "SES-IKS 2027",
+    "ICSES 2027",
     "environmental science conference",
     "indigenous knowledge systems",
     "Central University of Rajasthan",
     "Tribhuvan University",
   ],
   openGraph: {
-    title: "SES-IKS 2027",
+    title: "ICSES 2027",
     description: site.tagline,
     type: "website",
   },
@@ -41,8 +41,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${sourceSans.variable} ${sourceSerif.variable}`}>
-      <body>
+    <html lang="en" className={`${sourceSans.variable} ${sourceSerif.variable}`} suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <SplashScreen />
         <Header />
         <main>{children}</main>

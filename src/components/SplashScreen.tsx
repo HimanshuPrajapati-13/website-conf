@@ -41,7 +41,7 @@ export function SplashScreen() {
               "0 0 10px rgba(255,255,255,0.6), 0 0 20px rgba(255,255,255,0.3)",
           }}
         >
-          SES-IKS&apos;26
+          ICSES 27
         </h1>
         <div className="text-white/80">
           <ConcentricRing className="w-10 h-10 sm:w-12 sm:h-12" />

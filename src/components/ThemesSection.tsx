@@ -60,18 +60,24 @@ export function ThemesSection({ theme = "light" }: ThemesSectionProps) {
                     <div className="grid gap-8 md:grid-cols-2">
                       <div>
                         <p className={tc.label(theme)}>Poster topics</p>
-                        <ul className={`mt-3 space-y-2 ${tc.body(theme)}`}>
+                        <ul className={`mt-3 space-y-2.5 ${tc.body(theme)}`}>
                           {item.topics.map((topic) => (
-                            <li key={topic}>{topic}</li>
+                            <li key={topic} className="flex items-start gap-2">
+                              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#8fd4a8]" />
+                              <span>{topic}</span>
+                            </li>
                           ))}
                         </ul>
                       </div>
                       {item.details && item.details.length > 0 && (
                         <div>
                           <p className={tc.label(theme)}>Detailed topics</p>
-                          <ul className={`mt-3 space-y-2 ${tc.body(theme)}`}>
+                          <ul className={`mt-3 space-y-2.5 ${tc.body(theme)}`}>
                             {item.details.map((detail) => (
-                              <li key={detail}>{detail}</li>
+                              <li key={detail} className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#8fd4a8]" />
+                                <span>{detail}</span>
+                              </li>
                             ))}
                           </ul>
                         </div>
